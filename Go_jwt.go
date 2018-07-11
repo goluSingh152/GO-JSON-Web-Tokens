@@ -46,7 +46,7 @@ func main() {
 	claims["StudentInfo"] = struct {
 		Name string
 		Role string
-	}{"Ravi", "Student"}
+	}{"Data", "Student"}
 	signKey, err := jwt.ParseRSAPrivateKeyFromPEM(SignKey)
 	if err != nil {
 		log.Println(err)
